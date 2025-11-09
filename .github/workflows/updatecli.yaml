@@ -21,6 +21,6 @@ jobs:
         with:
           version: "v0.110.1"
       
-      - run: updatecli apply --values updatecli.d/values.yaml
+      - run: updatecli apply --values updatecli.d/values.yaml --pipeline updatecli.d/pipelines/nginx.yaml
         env:
           UPDATECLI_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
