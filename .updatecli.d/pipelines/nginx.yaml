@@ -30,7 +30,7 @@ targets:
 actions:
   nodesAmis:
     kind: github/pullrequest
-    title: Update nginx `{{ source "bottlerocketArm64NodeAmiVersion" }}`
+    title: Update nginx `{{ source "ingress" }}`
     scmid: default
     spec:
       draft: true
