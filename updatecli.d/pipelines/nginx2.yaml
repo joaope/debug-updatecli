@@ -1,7 +1,7 @@
 name: nginx-ingress-update
 
 scms:
-  default:
+  default2:
     kind: github
     spec:
       owner: "{{ .github.owner }}"
@@ -11,18 +11,18 @@ scms:
       branch: "{{ .github.branch }}"
 
 sources:
-  ingress:
+  ingress2:
     kind: helmchart
     spec:
       url: "https://kubernetes.github.io/ingress-nginx"
       name: "ingress-nginx"
 
 targets:
-  publicIngress:
+  publicIngress2:
     name: "ingress-nginx"
     kind: helmchart
-    sourceid: ingress
-    scmid: default
+    sourceid: ingress2
+    scmid: default2
     spec:
       name: "charts/ingress-nginx2"
       file: "Chart.yaml"
@@ -32,7 +32,7 @@ actions:
   nodesAmis:
     kind: github/pullrequest
     title: Update nginx 2 `{{ source "ingress" }}`
-    scmid: default
+    scmid: default2
     spec:
       draft: true
       labels:
