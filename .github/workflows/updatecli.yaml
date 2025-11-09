@@ -19,7 +19,7 @@ jobs:
       - name: Run updatecli
         uses: updatecli/updatecli-action@v2
         with:
-          version: "v0.110.0"
+          version: "v0.110.1"
       
       - run: updatecli apply --values updatecli.d/values-org.yaml --config ./updatecli.d/pipelines/
         env:
