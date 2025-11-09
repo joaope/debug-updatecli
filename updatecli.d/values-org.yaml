@@ -1,0 +1,5 @@
+github:
+  owner: test-updatecli
+  repository: debug-updatecli
+  branch: main
+  username: github-actions
