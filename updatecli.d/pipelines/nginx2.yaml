@@ -31,7 +31,7 @@ targets:
 actions:
   nodesAmis:
     kind: github/pullrequest
-    title: Update nginx 2 `{{ source "ingress" }}`
+    title: Update nginx 2 `{{ source "ingress2" }}`
     scmid: default2
     spec:
       draft: true
