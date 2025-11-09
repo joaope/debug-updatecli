@@ -29,7 +29,7 @@ targets:
       key: "$.dependencies[0].version"
 
 actions:
-  nodesAmis:
+  nodesAmis2:
     kind: github/pullrequest
     title: Update nginx 2 `{{ source "ingress2" }}`
     scmid: default2
