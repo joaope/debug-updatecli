@@ -6,6 +6,8 @@
 version: 2
 updates:
   - package-ecosystem: helm
-    directory: /
+    directories:
+    - /charts/ingress-nginx
+    - /charts/ingress-nginx2
     schedule:
       interval: "weekly"
